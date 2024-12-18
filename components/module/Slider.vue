@@ -21,7 +21,7 @@
             <swiper-container class="swiper w-full pt-8"
                 :class="[ center ? 'container mx-auto px-4 xl:max-w-none xl:px-0' : 'container mx-auto px-4' ]" ref="containerRef" :autoHeight="true"
                 :breakpoints="breakpoints" :centeredSlides="center" :loop="center"  :mousewheel="{ invert: true }" :autoplay="{ delay: 3000, enabled: true }">
-                <swiper-slide v-for="item in items" :key="item?.id"  class="h-auto">
+                <swiper-slide v-for="item in items" :key="item?.id"  class="h-auto" :class="{ 'slide' : center}">
                     <slot name="item" :item="item" />
                 </swiper-slide>
             </swiper-container>
@@ -79,3 +79,8 @@ const props = defineProps({
 const containerRef = ref(null)
 const swiper = useSwiper(containerRef)
 </script>
+<style scoped>
+.slide:not(.swiper-slide-active, .swiper-slide-prev, .swiper-slide-next) {
+  opacity: 0.5; 
+}
+</style>
