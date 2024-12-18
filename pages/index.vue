@@ -8,7 +8,7 @@
                 <ProductCard :product-date="item" />
             </template>
         </ModuleSlider>
-        <ModuleSlider :items="Categories" class="pt-16" title="Top Categories" :breakpoints="breakpoints">
+        <ModuleSlider :items="Categories" class="pt-16" title="Top Categories" :breakpoints="breakpoints" :center="true">
             <template #item="{ item }">
                 <CategoryCard :category-date="item" />
             </template>
@@ -143,9 +143,8 @@ const breakpoints = {
         spaceBetween: 10
     },
     768: {
-        slidesPerView: 3,
+        slidesPerView: 4,
         spaceBetween: 12
-    },
-    
+    }, 
 }
 </script>
