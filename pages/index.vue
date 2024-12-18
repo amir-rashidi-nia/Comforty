@@ -8,14 +8,14 @@
                 <ProductCard :product-date="item" />
             </template>
         </ModuleSlider>
-        <ModuleSlider :items="Categories" class="pt-8" title="Top Categories">
+        <ModuleSlider :items="Categories" class="pt-16" title="Top Categories" :breakpoints="breakpoints">
             <template #item="{ item }">
                 <CategoryCard :category-date="item" />
             </template>
         </ModuleSlider>
         <TheOurProducts />
         <TheAbout />
-        <ModuleSlider :items="products" class="pt-8" title="Recently Products">
+        <ModuleSlider :items="products" class="pt-16" title="Recently Products">
             <template #item="{ item }">
                 <ProductCard :product-date="item" />
             </template>
@@ -133,4 +133,19 @@ const Categories = [
         color: 'Black',
     },
 ]
+const breakpoints = {
+    320: {
+        slidesPerView: 1,
+        spaceBetween: 10
+    },
+    640: {
+        slidesPerView: 2,
+        spaceBetween: 10
+    },
+    768: {
+        slidesPerView: 3,
+        spaceBetween: 12
+    },
+    
+}
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <section class="w-full container mx-auto px-4">
+    <section class="w-full container mx-auto px-4 pt-4">
         <ModuleTab title="Our Products" :tabs="tabs"/>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-10 pt-6">
             <ProductCard v-for="product in products" :product-date="product" />

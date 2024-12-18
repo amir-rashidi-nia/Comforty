@@ -1,19 +1,19 @@
 <template>
     <div class="flex flex-col w-full">
         <div class="container mx-auto px-4 flex justify-between">
-            <h3 class="text-text text-3xl font-semibold">
+            <h3 class="text-text text-2xl sm:text-32 font-semibold">
                 {{ title }}
             </h3>
-            <div class="flex items-center space-x-4">
+            <div class="flex items-center space-x-2 sm:space-x-4">
                 <button @click="swiper.next()"
-                    class="bg-[#007580]  flex items-center justify-center rounded-full h-[44px] w-[44px]">
+                    class="bg-[#007580]  flex items-center justify-center rounded-full h-[33px] w-[33px] sm:h-[44px] sm:w-[44px]">
                     <p class="sr-only">slider controller</p>
-                    <SvgoArrow class="text-xl text-[#ffff]" />
+                    <SvgoArrow class="text-lg sm:text-xl text-[#ffff]" />
                 </button>
                 <button @click="swiper.prev()"
-                    class="bg-[#F0F2F3]  flex items-center justify-center rounded-full h-[44px] w-[44px]">
+                    class="bg-[#F0F2F3]  flex items-center justify-center rounded-full h-[33px] w-[33px] sm:h-[44px] sm:w-[44px]">
                     <p class="sr-only">slider controller</p>
-                    <SvgoArrow class="text-xl text-text rotate-180" />
+                    <SvgoArrow class="text-lg sm:text-xl text-text rotate-180" />
                 </button>
             </div>
         </div>

@@ -1,6 +1,6 @@
 <template>
     <div class="pt-16 flex flex-col items-center space-y-4">
-        <h2 class="text-text font-bold text-3xl text-center">{{ title }}</h2>
+        <h2 class="text-text text-2xl sm:text-32 font-semibold text-center">{{ title }}</h2>
         <div class="sm:hidden">
             <label for="tabs" class="sr-only">Select a topic</label>
             <select id="tabs" name="tabs"

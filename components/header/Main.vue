@@ -1,6 +1,6 @@
 <template>
     <div class="bg-[#F0F2F3]">
-        <div class="container mx-auto px-4 py-4">
+        <div class="container mx-auto px-4 py-4 sm:py-6">
             <div class="mx-auto flex items-center justify-between gap-x-8">
                 <div class="flex items-center gap-x-2">
                     <img src="/img/Logo.png" alt="logo" class="h-10 w-10 flex-none" />
@@ -15,7 +15,7 @@
                 </div>
                 <div class="hidden sm:flex items-center gap-x-2 text-text">
                     <BaseButton class="bg-[#ffff] text-xs space-x-2 h-[44px]">
-                        <SvgoCart filled class="text-xl mr-2" />
+                        <SvgoCarttwo filled class="text-xl mr-2" />
                         Cart
                         <span
                             class="w-5 h-5 rounded-full bg-[#007580] flex items-center justify-center text-white text-10">

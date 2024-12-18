@@ -10,6 +10,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter : 'Inter , serif'
+      },
       colors: {
         'text' : '#272343',
         'textInverted' : '#9A9CAA',
@@ -19,6 +22,7 @@ module.exports = {
         13: ['0.8rem', '1.1rem'],
         15: ['0.9rem', '1.3rem'],
         26: ['1.7rem', '2rem'],
+        32: ['1.92rem', '2.4rem'],
       },
       screens: {
         '3xl': '1800px',

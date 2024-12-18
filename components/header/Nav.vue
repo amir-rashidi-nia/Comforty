@@ -1,9 +1,9 @@
 <template>
   <nav class="bg-white w-full shadow-[0_1px_0px_0px_#E1E3E5]">
-    <div class="container mx-auto flex items-center justify-between py-6 px-4">
+    <div class="container mx-auto flex items-center justify-between py-4 sm:py-6 px-4">
       <div class="flex items-center gap-x-6">
-        <BaseButton class="text-[#242343] text-sm font-medium gap-x-4 rounded-md border border-[#E1E3E5 h-[47px] px-4">
-          <SvgoHam />
+        <BaseButton class="text-text text-sm leading-4 font-medium gap-x-4 rounded-md border border-[#E1E3E5 h-[47px] px-4">
+          <SvgoHam class="text-lg"/>
           All Categories
         </BaseButton>
         <div class="hidden sm:flex sm:gap-x-4 lg:gap-x-12">
@@ -15,7 +15,7 @@
       </div>
       <div class="hidden md:flex space-x-2">
         <span class="text-[#636270] text-sm">Contact:</span>
-        <span class="text-[#242343] text-sm font-medium">(808) 555-0111</span>
+        <span class="text-text text-sm font-medium">(808) 555-0111</span>
       </div>
       <div class="flex sm:hidden">
         <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-text"

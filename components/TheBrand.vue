@@ -1,8 +1,8 @@
 <template>
-    <section class="container mx-auto -mt-24 sm:-mt-8 px-4 grid grid-cols-3 sm:grid-cols-4 gap-6 lg:flex items-center lg:justify-between">
+    <section class="container mx-auto -mt-24 sm:-mt-6 px-4 grid grid-cols-3 sm:grid-cols-4 gap-6 lg:flex items-center lg:justify-between">
         <div v-for="brand in brands" :key="brand?.id" class="flex items-center">
-            <div class="w-full h-ful">
-                <img :src="`/img/brands/${brand.img}.png`" :alt="brand.img" class="w-full h-full object-cover">
+            <div class="w-full h-full">
+                <img :src="`/img/brands/${brand.img}.png`" :alt="brand.img" class="w-full h-full">
             </div>
         </div>
     </section>

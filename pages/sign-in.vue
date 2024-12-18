@@ -1,5 +1,6 @@
 <template>
-    <div class="flex min-h-full flex-1 flex-col justify-center py-12 px-4">
+    <div class="flex min-h-full flex-1 flex-col justify-center pb-12 px-4">
+        <ModuleBreadcrumb />
         <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-[648px]">
             <div class="bg-[#ffff] px-6 py-12 rounded-lg sm:px-10 shadow-[0_0px_30px_0px_#2723431F]">
                 <h2 class="text-center text-3xl font-semibold leading-8 tracking-tight text-text pb-6">
